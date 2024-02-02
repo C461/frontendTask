@@ -1,6 +1,6 @@
 import { CreateTask, UpdateTask } from "../interfaces/task.interface";
 
-const API = "http://localhost:4000/api";
+const API = process.env.REACT_APP_API || "http://localhost:4000/api";
 
 export const createTaskRequest = (task: CreateTask) =>
   fetch(`${API}/tasks`, {
