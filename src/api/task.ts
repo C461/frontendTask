@@ -1,6 +1,6 @@
 import { CreateTask, UpdateTask } from "../interfaces/task.interface";
 
-const API = process.env.PORT || "http://localhost:3000/api" || "0.0.0.0";
+const API = "https://frontendtask-production.up.railway.app";
 
 export const createTaskRequest = (task: CreateTask) =>
   fetch(`${API}/tasks`, {
