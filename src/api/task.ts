@@ -1,6 +1,6 @@
 import { CreateTask, UpdateTask } from "../interfaces/task.interface";
 
-const API = "https://frontendtask-production.up.railway.app";
+const API = "https://backendtask-production.up.railway.app/api/tasks";
 
 export const createTaskRequest = (task: CreateTask) =>
   fetch(`${API}/tasks`, {
