@@ -1,6 +1,6 @@
 import { CreateTask, UpdateTask } from "../interfaces/task.interface";
 
-const API = "https://backendtask-production.up.railway.app/api";
+const API = import.meta.env.VITE_API_URL;
 
 export const createTaskRequest = (task: CreateTask) =>
   fetch(`${API}/tasks`, {
